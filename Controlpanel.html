@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="sty/st.css" />
+    <link rel="stylesheet" type="text/css" href="sty/slider.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Smart Home</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Welcome To Smart Home</h1>
+    </div>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a href="Main.html">Home</a>
+      <a href="Controlpanel.html">Control Room</a>
+      <a href="index.html" class="right">Logout</a>
+    </div>
+    <!-- MAIN -->
+    <div class="row">
+      <div class="side1"></div>
+      <div class="main2">
+        <div class="box">
+          <h2>Φωτα</h2>
+          <form method="post">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="">Χώροι Σπιτιού</th>
+                  <th colspan="2">Κατάσταση</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td colspan="2">On-Off</td>
+                </tr>
+                <tr>
+                  <th>Είσοδος</th>
+                  <td colspan="2">
+                    <label class="switch">
+                      <input type="checkbox" name="L1" />
+                      <span class="slider round"></span>
+                    </label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>Κουζίνα</th>
+                  <td>
+                    <label class="switch">
+                      <input type="checkbox" name="L2" />
+                      <span class="slider round"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Σαλόνι</th>
+                  <td>
+                    <label class="switch">
+                      <input type="checkbox" name="L3" />
+                      <span class="slider round"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Δώμάτιο</th>
+                  <td>
+                    <label class="switch">
+                      <input type="checkbox" name="L4" />
+                      <span class="slider round"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Μπάνιο</th>
+                  <td>
+                    <label class="switch">
+                      <input type="checkbox" name="L5" />
+                      <span class="slider round"></span>
+                    </label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+
+          <script src="t.js"></script>
+          <script src="t1.js"></script>
+        </div>
+        <!-- CAMERA -->
+        <div class="box">
+          <h2>Κάμερα</h2>
+          <video
+            src="vids/cam.mp4"
+            width="90%"
+            height="90%"
+            controls
+            loop
+          ></video>
+        </div>
+        <!-- TEMPERATURE -->
+        <div class="box">
+          <h2>Υγρασια θερμοκρασια</h2>
+          <div class="boxb">10%</div>
+        </div>
+        <!-- ALERT -->
+        <div class="box">
+          <h2>Συναγερμος</h2>
+          <div class="boxa">Alert</div>
+        </div>
+      </div>
+      <div class="side1"></div>
+    </div>
+    <!-- FOOTER  -->
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>

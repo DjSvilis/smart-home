@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Smart Home</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Welcome To Smart Home</h1>
+    </div>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="navbar-left">
+        <button><a href="home.html">Home</a></button>
+        <button><a href="control.html">Control Room</a></button>
+      </div>
+      <div class="navbar-right">
+        <button><a href="login.html" class="right">Logout</a></button>
+      </div>
+    </div>
+
+    <div class="page">
+      <!-- TABLE -->
+      <div class="box">
+        <form method="post">
+          <table border="1" class="lights">
+            <h2>Φώτα</h2>
+            <thead>
+              <tr>
+                <th colspan="">Χώροι Σπιτιού</th>
+                <th colspan="2">Κατάσταση</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th></th>
+                <td colspan="2">On-Off</td>
+              </tr>
+              <tr>
+                <td>Είσοδος</td>
+                <td colspan="2">
+                  <label class="switch">
+                    <input type="checkbox" name="L1" />
+                    <span class="slider"></span
+                  ></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Κουζίνα</td>
+                <td colspan="2">
+                  <label class="switch">
+                    <input type="checkbox" name="L1" />
+                    <span class="slider"></span
+                  ></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Σαλόνι</td>
+                <td colspan="2">
+                  <label class="switch">
+                    <input type="checkbox" name="L1" />
+                    <span class="slider"></span
+                  ></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Δώμάτιο</td>
+                <td colspan="2">
+                  <label class="switch">
+                    <input type="checkbox" name="L1" />
+                    <span class="slider"></span
+                  ></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Μπάνιο</td>
+                <td colspan="2">
+                  <label class="switch">
+                    <input type="checkbox" name="L1" />
+                    <span class="slider"></span
+                  ></label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+        <script src="t.js"></script>
+        <script src="t1.js"></script>
+      </div>
+
+      <div class="box">
+        <h2>Κάμερα</h2>
+        <video
+          class="camera"
+          src="../vids/cam.mp4"
+          width="344px"
+          height="400px"
+          controls
+          loop
+        ></video>
+      </div>
+
+      <div class="box">
+        <h2>Υγρασια θερμοκρασια</h2>
+        <div class="temperature">
+          <svg viewBox="0 0 145 145">
+            <rect x="30" y="5" width="30" height="100" fill="#cccc"></rect>
+            <rect x="30" y="55" width="30" height="70" fill="#1565c0"></rect>
+            <text
+              x="70"
+              y="60"
+              text-anchor="start"
+              style="font-weight: 700; font-size: 1.3em"
+            >
+              27 °C
+            </text>
+            <text x="70" y="125" fill="grey">-20</text>
+            <text x="70" y="15" text-anchor="start" fill="grey">60</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Συναγερμος</h2>
+        <div class="alert"><h1>Alert</h1></div>
+      </div>
+    </div>
+    <!-- FOOTER  -->
+    <div class="footer">
+      <p>Copyright &copy; 2023</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<?php
+session_start();
+// if(!isset($_SESSION['username'] ) || $_SESSION['username'] !== 'admin') {
+//     header("Location: index.php");
+//     die();
+// }
+?>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Smart Home </title>
+	<link rel="stylesheet" type="text/css" href="sty/st.css">	
+
+</head>
+
+<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="sty/st.css">
+	<body>
+		<div class="header">
+		<h1> Welcome To Smart Home</h1>
+		</div>
+		<div class="navbar">
+			  <a href="Main.html">Home</a>
+			  <a href="Controlpanel.html">Control Room</a>
+			  <a href="index.php" class="right">Logout</a>
+		  </div>
+	</body>
+		<div class="row">
+		<div class="side">
+		    <h2>Σχετίκα με το Project</h2>
+		    <div><img src="pics/ard.jpg" style="height: 200px; width: 200px;"></div>
+		    <p>Σκοπός του Project είναι να υλοποιήσουμε ενα "έξυπνο σπίτι" το οποίο θα ενσωματώνει σύστημα ασφαλείας και έλεγχο συσκευών εξαποστάσεως.</p>
+		    <h3>Πανεπιστήμιο Ιωαννίνων</h3>
+		    <p>Το συγκεκριμένω project υλοποιείται στα πλαίσια της πτυχιακής εργασίας</p>
+		    <div><a href="https://www.dit.uoi.gr/" target="_blank"><img src="pics/down.jpg" style="height:200px; width:200px"></a>
+		    </div>
+		</div>
+	  	
+	  	<div class="main">
+	    	<h2>Λίγα λόγια</h2>
+				<p> Για την ευκολία χρήσης σχεδιάστηκε ένα περιβάλλον με μορφη ιστοσελίδας ώστε
+					ο χρήστης με μία απλή ματιά να μπορεί να αντιληφθει τον τρόπο λειτουργίας του 
+					project και να το χρησιμοποιήσει Για την κατασκευή της ιστοσλίδας χρησιμοποιήθηκαν 
+					οι παρακάτω γλώσσες :HTML, CSS & PHP.
+				</P>
+	  	</div>
+</div>
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+	
+
+</body>
+
+</html>
